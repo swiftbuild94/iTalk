@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3218C524087B83006FE9F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0E6F6E852404C76500FD5D73 /* iTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTalk.entitlements; sourceTree = "<group>"; };
 		0E8F784623FE27D800D56B70 /* iTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8F784923FE27D800D56B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3218C124087A5D006FE9F3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0E3218C524087B83006FE9F3 /* Default-568h@2x.png */,
+				0E8F784923FE27D800D56B70 /* AppDelegate.swift */,
+				0E8F785223FE280400D56B70 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0E3218C224087A74006FE9F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E8F785A23FE280400D56B70 /* Info.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E3218C324087A79006FE9F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E3218C424087A81006FE9F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
+				0E8F785023FE27D900D56B70 /* ContentView.swift */,
+				0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0E8F783D23FE27D800D56B70 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +138,11 @@
 		0E8F784823FE27D800D56B70 /* iTalk */ = {
 			isa = PBXGroup;
 			children = (
-				0E8F784923FE27D800D56B70 /* AppDelegate.swift */,
-				0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */,
-				0E8F785023FE27D900D56B70 /* ContentView.swift */,
-				0E8F785223FE280400D56B70 /* Assets.xcassets */,
-				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
-				0E8F785A23FE280400D56B70 /* Info.plist */,
+				0E6F6E852404C76500FD5D73 /* iTalk.entitlements */,
+				0E3218C424087A81006FE9F3 /* View */,
+				0E3218C324087A79006FE9F3 /* Controller */,
+				0E3218C224087A74006FE9F3 /* Model */,
+				0E3218C124087A5D006FE9F3 /* Support */,
 				0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */,
 				0E8F785423FE280400D56B70 /* Preview Content */,
 			);
@@ -438,7 +474,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTalk/iTalk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"iTalk/Preview Content\"";
 				DEVELOPMENT_TEAM = U4M526LLNP;
 				ENABLE_PREVIEWS = YES;
@@ -449,6 +487,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pbp.iTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +497,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTalk/iTalk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"iTalk/Preview Content\"";
 				DEVELOPMENT_TEAM = U4M526LLNP;
 				ENABLE_PREVIEWS = YES;
@@ -469,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pbp.iTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

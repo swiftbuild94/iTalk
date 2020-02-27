@@ -13,24 +13,33 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
+            Text("iTalk")
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image("first")
-                        Text("First")
+                        Text("iTalk")
                     }
                 }
                 .tag(0)
-            Text("Second View")
+            Text("History")
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image("second")
-                        Text("Second")
+                        Text("History")
                     }
                 }
                 .tag(1)
+			Text("Settings")
+						   .font(.title)
+						   .tabItem {
+							   VStack {
+								   Image("settings")
+								   Text("Settings")
+							   }
+						   }
+						   .tag(2)
         }
     }
 }
