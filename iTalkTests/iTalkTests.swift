@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import iTalk
+//@testable import iTalk
 
 class iTalkTests: XCTestCase {
 

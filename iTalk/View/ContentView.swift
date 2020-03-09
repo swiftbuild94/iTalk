@@ -12,21 +12,23 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-        TabView(selection: $selection){
+		 TabView(selection: $selection){
             Text("iTalk")
                 .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("first")
+				.fontWeight(.bold)
+				.foregroundColor(Color.blue)
+				.tabItem {
+					VStack {
+						Image(systemName: "bubble.left.and.bubble.right.fill")
                         Text("iTalk")
                     }
                 }
                 .tag(0)
-            Text("History")
-                .font(.title)
+            HistoryView()
+//                .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
+						Image(systemName: "clock.fill")
                         Text("History")
                     }
                 }
@@ -35,7 +37,7 @@ struct ContentView: View {
 						   .font(.title)
 						   .tabItem {
 							   VStack {
-								   Image("settings")
+								Image(systemName: "gear")
 								   Text("Settings")
 							   }
 						   }
