@@ -15,36 +15,19 @@ struct HistoryView: View {
 			List(chats) { chat in
 				ChatCell(chat: chat)
 			}
-			.navigationBarTitle(Text("History"))
+			.navigationBarTitle(Text("History"), displayMode: .inline)
 		}
 	}
 }
 
-struct HistoryView_Previews: PreviewProvider {
-    static var previews: some View {
-		HistoryView(chats: testChats)
-    }
-}
-
-
-struct Chat: Identifiable {
-	var id: UUID = UUID()
-	var name: String
-	var message: String
-	var imageName: String { return name }
-}
-
-#if DEBUG
-let testChats: [Chat] = [Chat(name: "John Appleseed", message: "Hi there"), Chat(name: "Steve Jobs", message: "Hello world"), Chat(name: "Patricio Benavente", message: "Audio…")]
-#endif
-
 struct ChatCell: View {
 	var chat: Chat
 	var body: some View {
-		NavigationLink(destination: Text(chat.name)) {
-			//				NavigationButton(destination: Text(chat.name)){
-			Image(systemName: "photo")
-				.cornerRadius(8)
+		return NavigationLink(destination: ChatView(chat: chat)) {
+			Image(chat.imageThumb)
+				.clipShape(Circle())
+				.shadow(radius: 5)
+				.overlay(Circle().stroke(Color.blue, lineWidth: 0))
 			VStack(alignment: .leading) {
 				Text(chat.name)
 				Text(chat.message)
@@ -53,4 +36,11 @@ struct ChatCell: View {
 			}
 		}
 	}
+}
+
+
+struct HistoryView_Previews: PreviewProvider {
+    static var previews: some View {
+		HistoryView(chats: testChats)
+    }
 }

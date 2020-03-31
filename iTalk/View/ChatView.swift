@@ -9,14 +9,40 @@
 import SwiftUI
 
 struct ChatView: View {
+	@State private var zoomed = false
 	var chat: Chat
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+	var body: some View {
+		VStack {
+			Image(chat.imageThumb)
+			.resizable()
+			.aspectRatio(contentMode: zoomed ? .fill : .fit)
+			.cornerRadius(50)
+			Image("audiowave")
+				.aspectRatio(contentMode: .fit)
+			Text(chat.message)
+		}
+		.navigationBarTitle(Text(chat.name), displayMode: .inline)
+	}
 }
 
+//#if DEBUG
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-		ChatView(chat: testChats[0])
+		NavigationView{ ChatView(chat: testChats[2]) }
     }
+	
 }
+//#endif
+
+/*
+HStack {
+.cornerRadius(32)
+		.tapAction {
+			withAnimation{
+				self.zoomed.toggle()
+			}
+	}
+	
+}
+	
+*/

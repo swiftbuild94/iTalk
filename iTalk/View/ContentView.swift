@@ -12,36 +12,32 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-		 TabView(selection: $selection){
-            Text("iTalk")
-                .font(.title)
-				.fontWeight(.bold)
-				.foregroundColor(Color.blue)
+		TabView(selection: $selection){
+			MainView(chats: testChats)
 				.tabItem {
 					VStack {
 						Image(systemName: "bubble.left.and.bubble.right.fill")
-                        Text("iTalk")
-                    }
-                }
-                .tag(0)
-            HistoryView()
-//                .font(.title)
-                .tabItem {
-                    VStack {
+						Text("iTalk")
+					}
+			}
+			.tag(0)
+			HistoryView(chats: testChats)
+				//                .font(.title)
+				.tabItem {
+					VStack {
 						Image(systemName: "clock.fill")
-                        Text("History")
-                    }
-                }
-                .tag(1)
-			Text("Settings")
-						   .font(.title)
-						   .tabItem {
-							   VStack {
-								Image(systemName: "gear")
-								   Text("Settings")
-							   }
-						   }
-						   .tag(2)
+						Text("History")
+					}
+			}
+			.tag(1)
+			SettingsView()
+				.tabItem {
+					VStack {
+						Image(systemName: "gear")
+						Text("Settings")
+					}
+			}
+			.tag(2)
         }
     }
 }

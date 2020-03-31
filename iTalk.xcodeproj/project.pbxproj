@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E12D215242C053C004F8EC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E12D214242C053C004F8EC9 /* SettingsView.swift */; };
 		0E8F784A23FE27D800D56B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784923FE27D800D56B70 /* AppDelegate.swift */; };
 		0E8F784C23FE27D800D56B70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */; };
 		0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */; };
@@ -18,6 +19,8 @@
 		0E8F786F23FE280400D56B70 /* iTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F786E23FE280400D56B70 /* iTalkUITests.swift */; };
 		0E982179240CBBBC006E19B3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E982178240CBBB9006E19B3 /* HistoryView.swift */; };
 		0EA551B4241604D3005390EE /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA551B3241604CE005390EE /* ChatView.swift */; };
+		0EFFF8AA242D3EFE00D0BE1D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFF8A9242D3EFA00D0BE1D /* Test.swift */; };
+		0EFFF8AC242D527600D0BE1D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFF8AB242D527600D0BE1D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E12D214242C053C004F8EC9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0E3218C524087B83006FE9F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0E6F6E852404C76500FD5D73 /* iTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTalk.entitlements; sourceTree = "<group>"; };
 		0E8F784623FE27D800D56B70 /* iTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,8 @@
 		0E8F787023FE280400D56B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E982178240CBBB9006E19B3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		0EA551B3241604CE005390EE /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		0EFFF8A9242D3EFA00D0BE1D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test.swift; path = iTalk/View/Test.swift; sourceTree = SOURCE_ROOT; };
+		0EFFF8AB242D527600D0BE1D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		0E3218C224087A74006FE9F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0EFFF8A9242D3EFA00D0BE1D /* Test.swift */,
 				0E8F785A23FE280400D56B70 /* Info.plist */,
 				0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */,
 			);
@@ -117,8 +124,10 @@
 				0EA551B3241604CE005390EE /* ChatView.swift */,
 				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
 				0E8F785023FE27D900D56B70 /* ContentView.swift */,
+				0EFFF8AB242D527600D0BE1D /* MainView.swift */,
 				0E982178240CBBB9006E19B3 /* HistoryView.swift */,
 				0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */,
+				0E12D214242C053C004F8EC9 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,10 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E12D215242C053C004F8EC9 /* SettingsView.swift in Sources */,
+				0EFFF8AC242D527600D0BE1D /* MainView.swift in Sources */,
 				0E8F784A23FE27D800D56B70 /* AppDelegate.swift in Sources */,
 				0E8F784C23FE27D800D56B70 /* SceneDelegate.swift in Sources */,
 				0E982179240CBBBC006E19B3 /* HistoryView.swift in Sources */,
 				0E8F785123FE27D900D56B70 /* ContentView.swift in Sources */,
+				0EFFF8AA242D3EFE00D0BE1D /* Test.swift in Sources */,
 				0EA551B4241604D3005390EE /* ChatView.swift in Sources */,
 				0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */,
 			);

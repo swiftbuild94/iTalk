@@ -9,13 +9,37 @@
 import SwiftUI
 
 struct MainView: View {
+	var chats: [Chat] = []
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+		NavigationView {
+			VStack {
+				// Text("Count: \(chats.count)")
+				ForEach(chats) { chat in
+					MainCellView(chat : chat)
+				}
+			}
+		}
+		.navigationBarTitle(Text("iTalk"), displayMode: .inline)
+	}
+}
+
+struct MainCellView: View {
+	var chat: Chat
+	var body: some View {
+		return NavigationLink(destination: ChatView(chat: chat)) {
+			VStack {
+			Image(chat.imageThumb)
+				.clipShape(Circle())
+				.shadow(radius: 15)
+				.overlay(Circle().stroke(Color.blue, lineWidth: 2))
+				Text(chat.name)
+			}
+		}
+	}
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+		MainView(chats: testChats)
     }
 }
