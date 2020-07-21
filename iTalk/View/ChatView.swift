@@ -12,16 +12,18 @@ struct ChatView: View {
 	@State private var zoomed = false
 	var chat: Chat
 	var body: some View {
-		VStack {
-			Image(chat.imageThumb)
-			.resizable()
-			.aspectRatio(contentMode: zoomed ? .fill : .fit)
-			.cornerRadius(50)
-			Image("audiowave")
-				.aspectRatio(contentMode: .fit)
-			Text(chat.message)
+		NavigationView {
+			VStack {
+				Image(chat.imageThumb)
+					.resizable()
+					.aspectRatio(contentMode: zoomed ? .fill : .fit)
+					.cornerRadius(50)
+				Image("audiowave")
+					.aspectRatio(contentMode: .fit)
+				Text(chat.message)
+			}
+			.navigationBarTitle(Text(chat.name), displayMode: .inline)
 		}
-		.navigationBarTitle(Text(chat.name), displayMode: .inline)
 	}
 }
 
