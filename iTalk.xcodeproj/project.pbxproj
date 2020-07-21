@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E12D215242C053C004F8EC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E12D214242C053C004F8EC9 /* SettingsView.swift */; };
+		0E4C9A4324C2185F00B756AE /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4224C2185E00B756AE /* Chats.swift */; };
+		0E4C9A4524C22C5200B756AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4424C22C5200B756AE /* User.swift */; };
+		0E4C9A4724C23BA800B756AE /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4624C23BA700B756AE /* LogIn.swift */; };
 		0E8F784A23FE27D800D56B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784923FE27D800D56B70 /* AppDelegate.swift */; };
 		0E8F784C23FE27D800D56B70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */; };
 		0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		0E12D214242C053C004F8EC9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0E3218C524087B83006FE9F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0E4C9A4224C2185E00B756AE /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
+		0E4C9A4424C22C5200B756AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E4C9A4624C23BA700B756AE /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = SOURCE_ROOT; };
 		0E6F6E852404C76500FD5D73 /* iTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTalk.entitlements; sourceTree = "<group>"; };
 		0E8F784623FE27D800D56B70 /* iTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8F784923FE27D800D56B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +110,8 @@
 		0E3218C224087A74006FE9F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C9A4224C2185E00B756AE /* Chats.swift */,
+				0E4C9A4424C22C5200B756AE /* User.swift */,
 				0EFFF8A9242D3EFA00D0BE1D /* Test.swift */,
 				0E8F785A23FE280400D56B70 /* Info.plist */,
 				0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */,
@@ -111,16 +119,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0E3218C324087A79006FE9F3 /* Controller */ = {
+		0E3218C324087A79006FE9F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		0E3218C424087A81006FE9F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E4C9A4624C23BA700B756AE /* LogIn.swift */,
 				0EA551B3241604CE005390EE /* ChatView.swift */,
 				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
 				0E8F785023FE27D900D56B70 /* ContentView.swift */,
@@ -156,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0E3218C424087A81006FE9F3 /* View */,
-				0E3218C324087A79006FE9F3 /* Controller */,
+				0E3218C324087A79006FE9F3 /* ViewModel */,
 				0E3218C224087A74006FE9F3 /* Model */,
 				0E3218C124087A5D006FE9F3 /* Support */,
 				0E8F785423FE280400D56B70 /* Preview Content */,
@@ -253,7 +262,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Patricio Benavente";
 				TargetAttributes = {
 					0E8F784523FE27D800D56B70 = {
@@ -328,8 +337,11 @@
 				0E982179240CBBBC006E19B3 /* HistoryView.swift in Sources */,
 				0E8F785123FE27D900D56B70 /* ContentView.swift in Sources */,
 				0EFFF8AA242D3EFE00D0BE1D /* Test.swift in Sources */,
+				0E4C9A4724C23BA800B756AE /* LogIn.swift in Sources */,
 				0EA551B4241604D3005390EE /* ChatView.swift in Sources */,
 				0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */,
+				0E4C9A4324C2185F00B756AE /* Chats.swift in Sources */,
+				0E4C9A4524C22C5200B756AE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +414,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -462,6 +475,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
