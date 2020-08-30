@@ -8,13 +8,4 @@
 
 import Foundation
 
-struct Chat: Identifiable {
-	var id: UUID = UUID()
-	var name: String
-	var message: String
-	var imageName: String
-	var imageThumb: String
-}
-
-
-let testChats: [Chat] = [Chat(name: "John Appleseed", message: "Hi there", imageName: "johnappleseed", imageThumb: "thm_johnappleseed"), Chat(name: "Steve Jobs", message: "Hello world", imageName: "SteveJobs", imageThumb: "thm_SteveJobs"), Chat(name: "Patricio Benavente", message: "Audio… 1:25", imageName: "PatricioBenavente", imageThumb: "thm_PatricioBenavente")]
+let testContacts: [User] = [User(name: "John Appleseed", photo: "thm_johnappleseed"), User(name: "Steve Jobs", photo: "thm_SteveJobs"), User(name: "Patricio Benavente", photo: "thm_PatricioBenavente")]
