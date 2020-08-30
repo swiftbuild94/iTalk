@@ -12,12 +12,14 @@ struct User: Identifiable, Codable {
 	var id = UUID()
 	var name: String
 	var photo: String?
+	var thumb: String?
 	var phoneNumber: Int?
 	var email: String?
 	var chats: [Chats]?
 	
-	init(name: String, photo: String){
+	init(name: String, photo: String, thumb: String){
 		self.name = name
 		self.photo = photo
+		self.thumb = thumb
 	}
 }
