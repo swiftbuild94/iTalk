@@ -15,4 +15,9 @@ struct User: Identifiable, Codable {
 	var phoneNumber: Int?
 	var email: String?
 	var chats: [Chats]?
+	
+	init(name: String, photo: String){
+		self.name = name
+		self.photo = photo
+	}
 }
