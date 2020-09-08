@@ -15,7 +15,7 @@ struct Contacts {
 		users = Array<User>()
 	}
 	
-	init(users: [Contacts.Users]){
+	init(users: [Contacts.User]){
 		self.users = users
 	}
 
