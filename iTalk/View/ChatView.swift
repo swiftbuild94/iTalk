@@ -10,19 +10,19 @@ import SwiftUI
 
 struct ChatView: View {
 	@State private var zoomed = false
-	var chat: Chat
+	var contact: User
 	var body: some View {
 		NavigationView {
 			VStack {
-				Image(chat.imageThumb)
+				Image(contact.photo!)
 					.resizable()
 					.aspectRatio(contentMode: zoomed ? .fill : .fit)
 					.cornerRadius(50)
 				Image("audiowave")
 					.aspectRatio(contentMode: .fit)
-				Text(chat.message)
+				Text("TODO Chats")
 			}
-			.navigationBarTitle(Text(chat.name), displayMode: .inline)
+			.navigationBarTitle(Text(contact.name), displayMode: .inline)
 		}
 	}
 }
@@ -30,7 +30,7 @@ struct ChatView: View {
 //#if DEBUG
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
-		NavigationView{ ChatView(chat: testChats[2]) }
+		NavigationView{ ChatView(contact: testContacts[3]) }
     }
 	
 }

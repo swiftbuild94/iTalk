@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct HistoryView: View {
-	var chats: [Chat] = []
+	var contacts: [User] = []
     var body: some View {
 		NavigationView {
-			List(chats) { chat in
-				ChatCell(chat: chat)
+			List(contacts) { contact in
+				ChatCell(contact: contact)
 			}
 			.navigationBarTitle(Text("History"), displayMode: .inline)
 		}
@@ -21,16 +21,16 @@ struct HistoryView: View {
 }
 
 struct ChatCell: View {
-	var chat: Chat
+	var contact: User
 	var body: some View {
-		return NavigationLink(destination: ChatView(chat: chat)) {
-			Image(chat.imageThumb)
+		return NavigationLink(destination: ChatView(contact: contact)) {
+			Image(contact.thumb!)
 				.clipShape(Circle())
 				.shadow(radius: 5)
 				.overlay(Circle().stroke(Color.blue, lineWidth: 0))
 			VStack(alignment: .leading) {
-				Text(chat.name)
-				Text(chat.message)
+				Text(contact.name)
+				Text("TODO: Message")
 					.font(.subheadline)
 					.foregroundColor(.secondary)
 			}
@@ -41,6 +41,6 @@ struct ChatCell: View {
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-		HistoryView(chats: testChats)
+		HistoryView(contacts: testContacts)
     }
 }

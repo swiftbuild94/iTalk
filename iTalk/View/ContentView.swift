@@ -13,7 +13,7 @@ struct ContentView: View {
  
     var body: some View {
 		TabView(selection: $selection){
-			MainView(chats: testChats)
+			MainView(contacts: testContacts)
 				.tabItem {
 					VStack {
 						Image(systemName: "bubble.left.and.bubble.right.fill")
@@ -21,7 +21,7 @@ struct ContentView: View {
 					}
 			}
 			.tag(0)
-			HistoryView(chats: testChats)
+			HistoryView(contacts: testContacts)
 				//                .font(.title)
 				.tabItem {
 					VStack {
@@ -38,6 +38,7 @@ struct ContentView: View {
 					}
 			}
 			.tag(2)
+			.navigationBarTitle("iTalk")
         }
     }
 }
