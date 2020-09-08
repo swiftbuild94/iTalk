@@ -10,11 +10,17 @@ import SwiftUI
 
 class ContactsVM {
 	private var model: Contacts = Contacts(users: testContacts)
+	private var users: [Contacts.User]
+	
+	init(){
+		users = model.users
+	}
 	
 	// MARK: - Access the model
-	var contacts: [Contacts.User] {
-		return model.users
+	func getModel()->[Contacts.User] {
+		return users
 	}
+	
 	
 	// MARK: - Intents
 	func addUser() {
