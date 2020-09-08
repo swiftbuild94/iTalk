@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0E12D215242C053C004F8EC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E12D214242C053C004F8EC9 /* SettingsView.swift */; };
 		0E4C9A4324C2185F00B756AE /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4224C2185E00B756AE /* Chats.swift */; };
-		0E4C9A4524C22C5200B756AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4424C22C5200B756AE /* User.swift */; };
+		0E4C9A4524C22C5200B756AE /* Contacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4424C22C5200B756AE /* Contacs.swift */; };
 		0E4C9A4724C23BA800B756AE /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4624C23BA700B756AE /* LogIn.swift */; };
+		0E5FC856250462DB0027E9BF /* ContactsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FC855250462D80027E9BF /* ContactsVM.swift */; };
 		0E8F784A23FE27D800D56B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784923FE27D800D56B70 /* AppDelegate.swift */; };
 		0E8F784C23FE27D800D56B70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */; };
 		0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */; };
@@ -47,8 +48,9 @@
 		0E12D214242C053C004F8EC9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0E3218C524087B83006FE9F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0E4C9A4224C2185E00B756AE /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
-		0E4C9A4424C22C5200B756AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E4C9A4424C22C5200B756AE /* Contacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacs.swift; sourceTree = "<group>"; };
 		0E4C9A4624C23BA700B756AE /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = SOURCE_ROOT; };
+		0E5FC855250462D80027E9BF /* ContactsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVM.swift; sourceTree = "<group>"; };
 		0E6F6E852404C76500FD5D73 /* iTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTalk.entitlements; sourceTree = "<group>"; };
 		0E8F784623FE27D800D56B70 /* iTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8F784923FE27D800D56B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0E4C9A4224C2185E00B756AE /* Chats.swift */,
-				0E4C9A4424C22C5200B756AE /* User.swift */,
+				0E4C9A4424C22C5200B756AE /* Contacs.swift */,
 				0EFFF8A9242D3EFA00D0BE1D /* Test.swift */,
 				0E8F785A23FE280400D56B70 /* Info.plist */,
 				0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */,
@@ -122,6 +124,7 @@
 		0E3218C324087A79006FE9F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0E5FC855250462D80027E9BF /* ContactsVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -338,10 +341,11 @@
 				0E8F785123FE27D900D56B70 /* ContentView.swift in Sources */,
 				0EFFF8AA242D3EFE00D0BE1D /* Test.swift in Sources */,
 				0E4C9A4724C23BA800B756AE /* LogIn.swift in Sources */,
+				0E5FC856250462DB0027E9BF /* ContactsVM.swift in Sources */,
 				0EA551B4241604D3005390EE /* ChatView.swift in Sources */,
 				0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */,
 				0E4C9A4324C2185F00B756AE /* Chats.swift in Sources */,
-				0E4C9A4524C22C5200B756AE /* User.swift in Sources */,
+				0E4C9A4524C22C5200B756AE /* Contacs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +513,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iTalk/Support/iTalk.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
@@ -524,6 +530,8 @@
 				MARKETING_VERSION = 1.0A;
 				PRODUCT_BUNDLE_IDENTIFIER = pbp.iTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,6 +543,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iTalk/Support/iTalk.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
@@ -550,6 +560,8 @@
 				MARKETING_VERSION = 1.0A;
 				PRODUCT_BUNDLE_IDENTIFIER = pbp.iTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

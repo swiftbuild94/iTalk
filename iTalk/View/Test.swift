@@ -8,4 +8,4 @@
 
 import Foundation
 
-let testContacts: [User] = [User(name: "John Appleseed", photo: "thm_johnappleseed"), User(name: "Steve Jobs", photo: "thm_SteveJobs"), User(name: "Patricio Benavente", photo: "thm_PatricioBenavente")]
+let testContacts: [Contacts.User] = [Contacts.User(name: "John Appleseed", photo: "johnappleseed", thumb: "thm_johnappleseed"), Contacts.User(name: "Steve Jobs", photo: "SteveJobs", thumb:  "thm_SteveJobs"), Contacts.User(name: "Patricio Benavente", photo: "PatricioBenavente", thumb: "thm_PatricioBenavente"), Contacts.User(name: "Andy Marquez", photo: "AndyMarquez", thumb: "thm_AndyMarquez")]
