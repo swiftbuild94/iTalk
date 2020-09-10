@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct HistoryView: View {
-	var contacts: [User] = []
+	private let contacts = ContactsVM().getModel()
+	
     var body: some View {
 		NavigationView {
 			List(contacts) { contact in
@@ -21,7 +22,8 @@ struct HistoryView: View {
 }
 
 struct ChatCell: View {
-	var contact: User
+	var contact: Contacts.User
+	
 	var body: some View {
 		return NavigationLink(destination: ChatView(contact: contact)) {
 			Image(contact.thumb!)
@@ -41,6 +43,6 @@ struct ChatCell: View {
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-		HistoryView(contacts: testContacts)
+		HistoryView()
     }
 }

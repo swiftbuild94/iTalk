@@ -10,10 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+	private let contacts = ContactsVM.init().getModel()
+	
     var body: some View {
 		TabView(selection: $selection){
-			MainView(contacts: testContacts)
+			iTalkView()
 				.tabItem {
 					VStack {
 						Image(systemName: "bubble.left.and.bubble.right.fill")
@@ -21,7 +22,7 @@ struct ContentView: View {
 					}
 			}
 			.tag(0)
-			HistoryView(contacts: testContacts)
+			HistoryView()
 				//                .font(.title)
 				.tabItem {
 					VStack {
@@ -38,7 +39,6 @@ struct ContentView: View {
 					}
 			}
 			.tag(2)
-			.navigationBarTitle("iTalk")
         }
     }
 }

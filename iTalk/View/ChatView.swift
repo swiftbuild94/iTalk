@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ChatView: View {
 	@State private var zoomed = false
-	var contact: User
+	var contact: Contacts.User
+	
+//	let contact: Contacts.User = contacts[index]
+	
 	var body: some View {
 		NavigationView {
 			VStack {
@@ -27,24 +30,12 @@ struct ChatView: View {
 	}
 }
 
-//#if DEBUG
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-		NavigationView{ ChatView(contact: testContacts[3]) }
-    }
-	
-}
-//#endif
-
 /*
-HStack {
-.cornerRadius(32)
-		.tapAction {
-			withAnimation{
-				self.zoomed.toggle()
-			}
-	}
+struct ChatView_Previews: PreviewProvider {
+	let contacts = ContactsVM().contacts
 	
+	static var previews: some View {
+		ChatView(contact: contacts[0])
+    }
 }
-	
 */
