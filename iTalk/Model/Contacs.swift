@@ -8,23 +8,34 @@
 
 import Foundation
 
-struct Contacts {
+struct Contacts: Identifiable, Codable {
+	var id = UUID()
 	var users: Array<User>
 	
 	init() {
 		users = Array<User>()
 	}
 	
-	init(users: [Contacts.User]){
-		self.users = users
+	init(contacts: [Contacts.User]){
+		self.users = contacts
+	}
+	
+	// MARK: - Mutating Users Func
+	mutating func addUser(_ user: User){
+		
 	}
 
+	mutating func removeUser(id: Int){
+		
+	}
+
+	// MARK: - User
 	struct User: Identifiable, Codable {
 		var id = UUID()
 		var name: String
 		var photo: String?
 		var thumb: String?
-		var phoneNumber: Int?
+		var phoneNumber: String?
 		var email: String?
 		var chats: [Chats]?
 
@@ -33,5 +44,31 @@ struct Contacts {
 			self.photo = photo
 			self.thumb = thumb
 		}
+		
+		// MARK: - Mutating User Func
+		mutating func changName(_ name: String){
+			
+		}
+		
+		mutating func changePhoto(_ photo: String){
+			
+		}
+		
+		mutating func changePhone(_ phone: String){
+			
+		}
+		
+		mutating func changeEmail(_ email: String){
+		}
+		
+		// MARK: - Mutating Chat Func
+		mutating func addChat(_ chat: Chat){
+			
+		}
+		
+		mutating func removeChat(id: Int){
+			
+		}
+		
 	}
 }
