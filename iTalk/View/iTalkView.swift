@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  iTalk.swift
 //  iTalk
 //
 //  Created by Patricio Benavente on 26/03/20.
