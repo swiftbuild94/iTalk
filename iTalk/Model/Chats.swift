@@ -9,17 +9,22 @@
 import Foundation
 
 struct Chats: Identifiable, Codable {
+	var chats: [Chat]
 	var id = UUID()
-	var typeOfContent: TypeOfContent?
-	var contentText: String?
-	var contentAudio: Data?
-	var contentVideo: Data?
-	var date = Date()
-	var delivered = false
-	var read = false
-	var readtime: Date?
+	
+	struct Chat: Identifiable, Codable {
+		var id = UUID()
+		var typeOfContent: TypeOfContent?
+		var contentText: String?
+		var contentAudio: Data?
+		var contentVideo: Data?
+		var date = Date()
+		var delivered = false
+		var read = false
+		var readtime: Date?
+	}
 }
-
+	
 enum TypeOfContent: String, Codable {
 	case text
 	case audio

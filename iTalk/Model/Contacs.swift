@@ -37,7 +37,7 @@ struct Contacts: Identifiable, Codable {
 		var thumb: String?
 		var phoneNumber: String?
 		var email: String?
-		var chats: [Chats]?
+		var chats: Chats?
 
 		init(name: String, photo: String, thumb: String){
 			self.name = name
@@ -62,7 +62,7 @@ struct Contacts: Identifiable, Codable {
 		}
 		
 		// MARK: - Mutating Chat Func
-		mutating func addChat(_ chat: Chat){
+		mutating func addChat(_ chat: Chats.Chat){
 			
 		}
 		
