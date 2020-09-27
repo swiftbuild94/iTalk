@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0BD6DF25206C4600F77250 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD6DE25206C4500F77250 /* GridLayout.swift */; };
+		0E0BD6E125207C3400F77250 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD6E025207C3200F77250 /* Array+Identifiable.swift */; };
 		0E12D215242C053C004F8EC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E12D214242C053C004F8EC9 /* SettingsView.swift */; };
 		0E4C9A4324C2185F00B756AE /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4224C2185E00B756AE /* Chats.swift */; };
 		0E4C9A4524C22C5200B756AE /* Contacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4424C22C5200B756AE /* Contacs.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0BD6DE25206C4500F77250 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		0E0BD6E025207C3200F77250 /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		0E12D214242C053C004F8EC9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0E3218C524087B83006FE9F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0E4C9A4224C2185E00B756AE /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		0E3218C124087A5D006FE9F3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				0E0BD6E025207C3200F77250 /* Array+Identifiable.swift */,
 				0E6F6E852404C76500FD5D73 /* iTalk.entitlements */,
 				0E3218C524087B83006FE9F3 /* Default-568h@2x.png */,
 				0E8F784923FE27D800D56B70 /* AppDelegate.swift */,
@@ -134,6 +139,7 @@
 		0E3218C424087A81006FE9F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E0BD6DE25206C4500F77250 /* GridLayout.swift */,
 				0E4C9A4624C23BA700B756AE /* LogIn.swift */,
 				0EA551B3241604CE005390EE /* ChatView.swift */,
 				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
@@ -348,6 +354,8 @@
 				0EA551B4241604D3005390EE /* ChatView.swift in Sources */,
 				0ED68B9D252053DB0005ABA4 /* Grid.swift in Sources */,
 				0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */,
+				0E0BD6DF25206C4600F77250 /* GridLayout.swift in Sources */,
+				0E0BD6E125207C3400F77250 /* Array+Identifiable.swift in Sources */,
 				0E4C9A4324C2185F00B756AE /* Chats.swift in Sources */,
 				0E4C9A4524C22C5200B756AE /* Contacs.swift in Sources */,
 			);
