@@ -8,17 +8,23 @@
 
 import SwiftUI
 
-class ContactsVM {
-	private var model: Contacts = Contacts(users: testContacts)
-	private var users: [Contacts.User]
+final class ContactsVM: ObservableObject {
+	@Published private(set) var model: Contacts = Contacts(contacts: testContacts)
+	private(set) var users: [Contacts.User] = []
 	
-	init(){
-		users = model.users
+	
+	var contacts: [Contacts.User]? {
+		return users
 	}
+	
 	
 	// MARK: - Access the model
 	func getModel()->[Contacts.User] {
-		return users
+		// TODO: Get model from database
+		self.users = model.users
+//		self.users = testContacts
+		print(users)
+		return self.users
 	}
 	
 	
