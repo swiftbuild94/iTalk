@@ -20,7 +20,7 @@ struct ChatView: View {
 				Image(contact.photo!)
 					.resizable()
 					.aspectRatio(contentMode: zoomed ? .fill : .fit)
-					.cornerRadius(50)
+					.cornerRadius(cornerRadius)
 				Image("audiowave")
 					.aspectRatio(contentMode: .fit)
 				Text("TODO Chats")
@@ -28,6 +28,7 @@ struct ChatView: View {
 			.navigationBarTitle(Text(contact.name), displayMode: .inline)
 		}
 	}
+	let cornerRadius: CGFloat = 50
 }
 
 /*
@@ -39,3 +40,4 @@ struct ChatView_Previews: PreviewProvider {
     }
 }
 */
+

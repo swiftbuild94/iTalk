@@ -9,15 +9,20 @@
 import SwiftUI
 
 struct HistoryView: View {
-	private let contacts = ContactsVM().getModel()
+	@ObservedObject private var viewModel = ContactsVM()
+	private var contacts: [Contacts.User]? {
+		return viewModel.getModel()
+	}
 	
     var body: some View {
 		NavigationView {
-			List(contacts) { contact in
-				ChatCell(contact: contact)
+			if contacts != nil {
+				List(contacts!) { contact in
+					ChatCell(contact: contact)
+				}
 			}
-			.navigationBarTitle(Text("History"), displayMode: .inline)
 		}
+		.navigationBarTitle(Text("History"), displayMode: .inline)
 	}
 }
 
@@ -28,8 +33,8 @@ struct ChatCell: View {
 		return NavigationLink(destination: ChatView(contact: contact)) {
 			Image(contact.thumb!)
 				.clipShape(Circle())
-				.shadow(radius: 5)
-				.overlay(Circle().stroke(Color.blue, lineWidth: 0))
+				.shadow(radius: shadowRadius)
+				.overlay(Circle().stroke(Color.blue, lineWidth: lineWidth))
 			VStack(alignment: .leading) {
 				Text(contact.name)
 				Text("TODO: Message")
@@ -38,6 +43,8 @@ struct ChatCell: View {
 			}
 		}
 	}
+	let shadowRadius: CGFloat = 5
+	let lineWidth: CGFloat = 0
 }
 
 
