@@ -6,7 +6,7 @@
 //  Copyright © 2020 Patricio Benavente. All rights reserved.
 //
 
-import SwiftUI
+import SwiftUI	
 
 struct iTalkView: View {
 	private let contacts = ContactsVM().getModel()

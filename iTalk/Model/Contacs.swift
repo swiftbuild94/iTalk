@@ -9,8 +9,8 @@
 import Foundation
 
 struct Contacts: Identifiable, Codable {
-	var id = UUID()
-	var users: Array<User>
+	internal var id = UUID()
+	private(set) var users: Array<User>
 	
 	init() {
 		users = Array<User>()
@@ -22,11 +22,17 @@ struct Contacts: Identifiable, Codable {
 	
 	// MARK: - Mutating Users Func
 	mutating func addUser(_ user: User){
-		
+		self.users.append(user)
 	}
 
-	mutating func removeUser(id: Int){
-		
+	mutating func removeUser(id: UUID) -> Bool {
+		for index in 0 ..< self.users.count {
+			if users[index].id == id {
+				self.users.remove(at: index)
+				return true
+			}
+		}
+		return false
 	}
 
 	// MARK: - User

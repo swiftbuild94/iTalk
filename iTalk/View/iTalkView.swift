@@ -11,7 +11,7 @@ import SwiftUI
 struct iTalkView: View {
 	@ObservedObject private var viewModel = ContactsVM()
 	
-	private var contacts: [Contacts.User]? {
+	var contacts: [Contacts.User]? {
 		return viewModel.getModel()
 	}
 	
@@ -22,7 +22,6 @@ struct iTalkView: View {
 					// Text("Count: \(contacts.count)")
 					NavigationLink(destination: ChatView(contact: contact)) {
 						ContactView(contact: contact)
-						.padding(10)
 					}
 				}
 			}
@@ -39,41 +38,48 @@ struct ContactView: View {
 		VStack{
 			ZStack{
 				Image(contact.thumb!)
+//					.background(Circle())
 					.clipShape(Circle())
-					.overlay(Circle().stroke(Color.blue, lineWidth: lineWidth))
+					.overlay(Circle().stroke(Color.black, lineWidth: lineWidth))
 					.shadow(radius: shadowRadius)
+					.padding(padding)
 				if chats != nil && chats! > -1 {
 					NotificationsView(chats: chats!)
 				}
 			}
 			Text(contact.name)
+				.foregroundColor(Color.black)
 				.font(.headline)
 				.bold()
 				.autocapitalization(.sentences)
 		}
+	.padding(padding)
 	}
-	let shadowRadius: CGFloat = 60
-	let lineWidth: CGFloat = 2
-}
-
-struct NotificationsView: View {
-	var chats: Int
-	var body: some View {
-		ZStack{
-			Text("\(chats) 9")
-				.font(.headline)
-				.bold()
-				.foregroundColor(Color.black)
-				.accentColor(Color.black)
-				.clipShape(Circle())
+	private let shadowRadius: CGFloat = 1
+	private let lineWidth: CGFloat = 1
+	private let padding: CGFloat = 10
+	
+	struct NotificationsView: View {
+		var chats: Int
+		var body: some View {
+			Group{
+				Text("\(chats)")
+					.font(.subheadline)
+					.bold()
+					.foregroundColor(Color.black)
+					.padding(padding)
+			}
+			.background(Circle())
+			.position(x: 115, y: 145)
+			.foregroundColor(Color.red)
+			.shadow(radius: shadowRadius)
+//			.overlay(Circle().stroke(Color.black, lineWidth: lineWidth))
 		}
-		.overlay(Circle().fill(Color.red))
-		.overlay(Circle().stroke(Color.black))
-		.shadow(radius: shadowRadius)
+		private let shadowRadius: CGFloat = 5
+		private let lineWidth: CGFloat = 2
+		private let padding: CGFloat = 10
 	}
-	let shadowRadius: CGFloat = 20.0
 }
-
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {

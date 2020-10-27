@@ -22,7 +22,6 @@ final class ContactsVM: ObservableObject {
 	func getModel()->[Contacts.User] {
 		// TODO: Get model from database
 		self.users = model.users
-//		self.users = testContacts
 		print(users)
 		return self.users
 	}
