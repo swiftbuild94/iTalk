@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Contacts: Identifiable, Codable {
+struct Contacts: Identifiable {
 	internal var id = UUID()
 	private(set) var users: Array<User>
 	
@@ -36,15 +36,16 @@ struct Contacts: Identifiable, Codable {
 	}
 
 	// MARK: - User
-	struct User: Identifiable, Codable {
+	struct User: Identifiable {
 		var id = UUID()
 		var name: String
 		var photo: String?
 		var thumb: String?
 		var phoneNumber: String?
 		var email: String?
-		var chats: Chats?
-
+		var newChats: Int = 0
+		var chats: [Chat] = []
+		
 		init(name: String, photo: String, thumb: String){
 			self.name = name
 			self.photo = photo
@@ -53,28 +54,54 @@ struct Contacts: Identifiable, Codable {
 		
 		// MARK: - Mutating User Func
 		mutating func changName(_ name: String){
-			
+			self.name = name
 		}
 		
 		mutating func changePhoto(_ photo: String){
-			
+			self.photo = photo
 		}
 		
 		mutating func changePhone(_ phone: String){
-			
+			self.phoneNumber = phone
 		}
 		
 		mutating func changeEmail(_ email: String){
+			self.email = email
 		}
 		
 		// MARK: - Mutating Chat Func
-		mutating func addChat(_ chat: Chats.Chat){
-			
+		mutating func addChat(_ chat: Chat){
+			self.chats.append(chat)
 		}
 		
-		mutating func removeChat(id: Int){
-			
+		mutating func unreadChats(){
+			var count = 0
+			for chat in chats {
+				if chat.read == false {
+					count += 1
+				}
+			}
+			self.newChats = count
+		}
+
+		mutating func deliveredChat(_ id: UUID){
+			for var chat in chats {
+				if chat.id == id {
+					chat.delivered = true
+					removeChat(id: chat.id)
+					addChat(chat)
+				}
+			}
 		}
 		
+		mutating func removeChat(id: UUID){
+			var index = 0
+			for chat in chats {
+				if chat.id == id {
+					self.chats.remove(at: index)
+				}
+				index += 1
+			}
+		}
 	}
 }
