@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16E8A3CD2A470D46BC14A7DD396FC545 /* Pods-iTalk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E11B08A2EFFBA079FE1296CC75C3814 /* Pods-iTalk-dummy.m */; };
+		1EFB9E51FFEFD9116CEDA1BDEE4AD73C /* Pods-iTalk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B75B827809494083771DB07F961AF18 /* Pods-iTalk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9EB7BAE28DB2B5294EA98D9D7581F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		560783648455635F8658156A4CE5C80E /* Pods-iTalk-iTalkUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3323EC5CF13971F641D8E98CE5ABFE94 /* Pods-iTalk-iTalkUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56F5B0781CEF4AB1CB0095210B776ECA /* Pods-iTalkTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFFF501D336BCFD7B1BDAF9B91FDD9D7 /* Pods-iTalkTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		769A6929568564DEF9FE3DB4BC109F47 /* Pods-iTalkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16654D2D27ABEB45172E3DA7173BE4C9 /* Pods-iTalkTests-dummy.m */; };
+		A6E66A21A9F04818F92E31B8843E3BCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B912FAE74CC3FD4D45281A6857E1D9C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DF23D547974910849FDC09C68A42C791 /* Pods-iTalk-iTalkUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C439115F1DD2F4C437A20FEA0A2AE517 /* Pods-iTalk-iTalkUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F30FD6CC755C5A90673DE99C304671A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A781C716A159C1777B410F736D23EA12;
+			remoteInfo = "Pods-iTalk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025DFA5B53B09A287E06DB5F53F9BE84 /* Pods-iTalk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTalk-Info.plist"; sourceTree = "<group>"; };
+		0B54DE76C1228C33DD74AB77C1ADE9A0 /* Pods-iTalkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iTalkTests.modulemap"; sourceTree = "<group>"; };
+		14AF88301808AACB3256E60D0BB496A8 /* Pods-iTalkTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTalkTests-Info.plist"; sourceTree = "<group>"; };
+		16654D2D27ABEB45172E3DA7173BE4C9 /* Pods-iTalkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iTalkTests-dummy.m"; sourceTree = "<group>"; };
+		19821DE0F2851F339BE6B97F224709FE /* Pods-iTalk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iTalk.modulemap"; sourceTree = "<group>"; };
+		1B75B827809494083771DB07F961AF18 /* Pods-iTalk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iTalk-umbrella.h"; sourceTree = "<group>"; };
+		3323EC5CF13971F641D8E98CE5ABFE94 /* Pods-iTalk-iTalkUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iTalk-iTalkUITests-umbrella.h"; sourceTree = "<group>"; };
+		37BD0BEFDBBBE606719753D21100B244 /* Pods-iTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E922324A9232422A29D59E3B0B5EFF7 /* Pods_iTalk_iTalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalk_iTalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6312EE4186FB06348D0DB3255E57DC9C /* Pods-iTalkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iTalkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66A680FED4E37B1A360464520723E0C1 /* Pods-iTalk-iTalkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iTalk-iTalkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E11B08A2EFFBA079FE1296CC75C3814 /* Pods-iTalk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iTalk-dummy.m"; sourceTree = "<group>"; };
+		722C32DA385E2AC8115A0AA774D95BE9 /* Pods-iTalk-iTalkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTalk-iTalkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74D65DC0A3C1CBBEEA26514162FDA3E1 /* Pods-iTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTalk.release.xcconfig"; sourceTree = "<group>"; };
+		77714B87F78DD10EC1E2C2CD156A3DD7 /* Pods_iTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E104D751CA6666E55F19D6CE34EFD6 /* Pods-iTalk-iTalkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iTalk-iTalkUITests.modulemap"; sourceTree = "<group>"; };
+		8A57E65C1E8A626EDAD282C6E6A21CBC /* Pods-iTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5EF90AC63706375F4D4CC8246B8AE7F /* Pods-iTalk-iTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTalk-iTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB5A19DC53CB0F20CC2DBE361779D5F6 /* Pods-iTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8A8E350EF3CBF8D2D05F50B84BA46D /* Pods-iTalk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTalk-acknowledgements.plist"; sourceTree = "<group>"; };
+		C33C05F4A5ADCC18C8F7723575122596 /* Pods-iTalk-iTalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iTalk-iTalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3CA74BCF86E8805DBE96429051BB1B2 /* Pods-iTalkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTalkTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C439115F1DD2F4C437A20FEA0A2AE517 /* Pods-iTalk-iTalkUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iTalk-iTalkUITests-dummy.m"; sourceTree = "<group>"; };
+		E5EC74EB44D7D74E81FD079FEFCBAF1D /* Pods-iTalk-iTalkUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iTalk-iTalkUITests-Info.plist"; sourceTree = "<group>"; };
+		E8005FA983DB1F845FE84D3BF21FC206 /* Pods-iTalk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iTalk-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EEA1CC51DBA7A3CF3329EC85C04CB34F /* Pods_iTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFF501D336BCFD7B1BDAF9B91FDD9D7 /* Pods-iTalkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iTalkTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46971E393931CB35E0000A901912192D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E66A21A9F04818F92E31B8843E3BCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E530DA5609C4D76552C8C431C0B41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9EB7BAE28DB2B5294EA98D9D7581F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0AA363E9BC6A21F0C397AA5D628DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B912FAE74CC3FD4D45281A6857E1D9C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50FDA0A8FB2EAED58F67E72897ADD8EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77714B87F78DD10EC1E2C2CD156A3DD7 /* Pods_iTalk.framework */,
+				3E922324A9232422A29D59E3B0B5EFF7 /* Pods_iTalk_iTalkUITests.framework */,
+				EEA1CC51DBA7A3CF3329EC85C04CB34F /* Pods_iTalkTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C6F8EF04583D5420C120886C71C62D3F /* Pods-iTalk */ = {
+			isa = PBXGroup;
+			children = (
+				19821DE0F2851F339BE6B97F224709FE /* Pods-iTalk.modulemap */,
+				E8005FA983DB1F845FE84D3BF21FC206 /* Pods-iTalk-acknowledgements.markdown */,
+				BF8A8E350EF3CBF8D2D05F50B84BA46D /* Pods-iTalk-acknowledgements.plist */,
+				6E11B08A2EFFBA079FE1296CC75C3814 /* Pods-iTalk-dummy.m */,
+				025DFA5B53B09A287E06DB5F53F9BE84 /* Pods-iTalk-Info.plist */,
+				1B75B827809494083771DB07F961AF18 /* Pods-iTalk-umbrella.h */,
+				BB5A19DC53CB0F20CC2DBE361779D5F6 /* Pods-iTalk.debug.xcconfig */,
+				74D65DC0A3C1CBBEEA26514162FDA3E1 /* Pods-iTalk.release.xcconfig */,
+			);
+			name = "Pods-iTalk";
+			path = "Target Support Files/Pods-iTalk";
+			sourceTree = "<group>";
+		};
+		C7DE754D89FDFDF8716B51DF0563C7DB /* Pods-iTalk-iTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80E104D751CA6666E55F19D6CE34EFD6 /* Pods-iTalk-iTalkUITests.modulemap */,
+				66A680FED4E37B1A360464520723E0C1 /* Pods-iTalk-iTalkUITests-acknowledgements.markdown */,
+				722C32DA385E2AC8115A0AA774D95BE9 /* Pods-iTalk-iTalkUITests-acknowledgements.plist */,
+				C439115F1DD2F4C437A20FEA0A2AE517 /* Pods-iTalk-iTalkUITests-dummy.m */,
+				E5EC74EB44D7D74E81FD079FEFCBAF1D /* Pods-iTalk-iTalkUITests-Info.plist */,
+				3323EC5CF13971F641D8E98CE5ABFE94 /* Pods-iTalk-iTalkUITests-umbrella.h */,
+				C33C05F4A5ADCC18C8F7723575122596 /* Pods-iTalk-iTalkUITests.debug.xcconfig */,
+				B5EF90AC63706375F4D4CC8246B8AE7F /* Pods-iTalk-iTalkUITests.release.xcconfig */,
+			);
+			name = "Pods-iTalk-iTalkUITests";
+			path = "Target Support Files/Pods-iTalk-iTalkUITests";
+			sourceTree = "<group>";
+		};
+		CB9F234E4B1BB05EB158C3AE1287ACBB /* Pods-iTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B54DE76C1228C33DD74AB77C1ADE9A0 /* Pods-iTalkTests.modulemap */,
+				6312EE4186FB06348D0DB3255E57DC9C /* Pods-iTalkTests-acknowledgements.markdown */,
+				C3CA74BCF86E8805DBE96429051BB1B2 /* Pods-iTalkTests-acknowledgements.plist */,
+				16654D2D27ABEB45172E3DA7173BE4C9 /* Pods-iTalkTests-dummy.m */,
+				14AF88301808AACB3256E60D0BB496A8 /* Pods-iTalkTests-Info.plist */,
+				EFFF501D336BCFD7B1BDAF9B91FDD9D7 /* Pods-iTalkTests-umbrella.h */,
+				37BD0BEFDBBBE606719753D21100B244 /* Pods-iTalkTests.debug.xcconfig */,
+				8A57E65C1E8A626EDAD282C6E6A21CBC /* Pods-iTalkTests.release.xcconfig */,
+			);
+			name = "Pods-iTalkTests";
+			path = "Target Support Files/Pods-iTalkTests";
+			sourceTree = "<group>";
+		};
+		CDED027FA058A3429D77077E591A8CD0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6F8EF04583D5420C120886C71C62D3F /* Pods-iTalk */,
+				C7DE754D89FDFDF8716B51DF0563C7DB /* Pods-iTalk-iTalkUITests */,
+				CB9F234E4B1BB05EB158C3AE1287ACBB /* Pods-iTalkTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				50FDA0A8FB2EAED58F67E72897ADD8EB /* Products */,
+				CDED027FA058A3429D77077E591A8CD0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		629B23A1BB41E1B6383096DAB9B8C5B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F5B0781CEF4AB1CB0095210B776ECA /* Pods-iTalkTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E35EA2719F1B9A60C722FF56BDA430 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB9E51FFEFD9116CEDA1BDEE4AD73C /* Pods-iTalk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC4FE9AEBDF07A02B0CB9EA4E48841A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560783648455635F8658156A4CE5C80E /* Pods-iTalk-iTalkUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06352E39FA7AAF26F23AA417CDF5A44A /* Pods-iTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFC55BC06555EB72B291B5D83A39AA3 /* Build configuration list for PBXNativeTarget "Pods-iTalkTests" */;
+			buildPhases = (
+				629B23A1BB41E1B6383096DAB9B8C5B1 /* Headers */,
+				DD357C03A67693D97E7340130B9E778C /* Sources */,
+				46971E393931CB35E0000A901912192D /* Frameworks */,
+				3884370712188A100810E3FFD71E5FC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C7F2474C308E5B010EC00C8722E5E97 /* PBXTargetDependency */,
+			);
+			name = "Pods-iTalkTests";
+			productName = "Pods-iTalkTests";
+			productReference = EEA1CC51DBA7A3CF3329EC85C04CB34F /* Pods_iTalkTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A781C716A159C1777B410F736D23EA12 /* Pods-iTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1081D291F0E315825D0DE6B15C82E855 /* Build configuration list for PBXNativeTarget "Pods-iTalk" */;
+			buildPhases = (
+				62E35EA2719F1B9A60C722FF56BDA430 /* Headers */,
+				0DB6CF0472063185F324252E225E821E /* Sources */,
+				46E530DA5609C4D76552C8C431C0B41F /* Frameworks */,
+				D3CE4B3F0AB22688D94070D75282E812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iTalk";
+			productName = "Pods-iTalk";
+			productReference = 77714B87F78DD10EC1E2C2CD156A3DD7 /* Pods_iTalk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0558FF792E3F1DCE2023791EF309CED /* Pods-iTalk-iTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 351F332D3582892082D416A34D4EB595 /* Build configuration list for PBXNativeTarget "Pods-iTalk-iTalkUITests" */;
+			buildPhases = (
+				DDC4FE9AEBDF07A02B0CB9EA4E48841A /* Headers */,
+				5EF23EA6818E49136098C7BDC3379BB9 /* Sources */,
+				BC0AA363E9BC6A21F0C397AA5D628DE0 /* Frameworks */,
+				692571189F98C96A6302E9CFB9522C1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iTalk-iTalkUITests";
+			productName = "Pods-iTalk-iTalkUITests";
+			productReference = 3E922324A9232422A29D59E3B0B5EFF7 /* Pods_iTalk_iTalkUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 50FDA0A8FB2EAED58F67E72897ADD8EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A781C716A159C1777B410F736D23EA12 /* Pods-iTalk */,
+				F0558FF792E3F1DCE2023791EF309CED /* Pods-iTalk-iTalkUITests */,
+				06352E39FA7AAF26F23AA417CDF5A44A /* Pods-iTalkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3884370712188A100810E3FFD71E5FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		692571189F98C96A6302E9CFB9522C1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CE4B3F0AB22688D94070D75282E812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DB6CF0472063185F324252E225E821E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E8A3CD2A470D46BC14A7DD396FC545 /* Pods-iTalk-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF23EA6818E49136098C7BDC3379BB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF23D547974910849FDC09C68A42C791 /* Pods-iTalk-iTalkUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD357C03A67693D97E7340130B9E778C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769A6929568564DEF9FE3DB4BC109F47 /* Pods-iTalkTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C7F2474C308E5B010EC00C8722E5E97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-iTalk";
+			target = A781C716A159C1777B410F736D23EA12 /* Pods-iTalk */;
+			targetProxy = 3F30FD6CC755C5A90673DE99C304671A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1BA1C3C5D68383980BD56849AAA7C743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5A19DC53CB0F20CC2DBE361779D5F6 /* Pods-iTalk.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTalk/Pods-iTalk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTalk/Pods-iTalk.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		231528393B7084E13F97FF9EF804A1C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		353D2EB3545D27343B51B709D9C0420B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		87B9AFCB9483A1EA1D4CA40DCFFD2382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C33C05F4A5ADCC18C8F7723575122596 /* Pods-iTalk-iTalkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTalk-iTalkUITests/Pods-iTalk-iTalkUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTalk-iTalkUITests/Pods-iTalk-iTalkUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A6D3ABD4757361CC5FE07B6684B7568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37BD0BEFDBBBE606719753D21100B244 /* Pods-iTalkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTalkTests/Pods-iTalkTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTalkTests/Pods-iTalkTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA0E409B8EC321DFCFE9D2236FCBC636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D65DC0A3C1CBBEEA26514162FDA3E1 /* Pods-iTalk.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTalk/Pods-iTalk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTalk/Pods-iTalk.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0797EA9BC02A903BBADB1BF923FCEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5EF90AC63706375F4D4CC8246B8AE7F /* Pods-iTalk-iTalkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTalk-iTalkUITests/Pods-iTalk-iTalkUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTalk-iTalkUITests/Pods-iTalk-iTalkUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3DC846D92E94193CEC40B118F2F3A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A57E65C1E8A626EDAD282C6E6A21CBC /* Pods-iTalkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iTalkTests/Pods-iTalkTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iTalkTests/Pods-iTalkTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1081D291F0E315825D0DE6B15C82E855 /* Build configuration list for PBXNativeTarget "Pods-iTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA1C3C5D68383980BD56849AAA7C743 /* Debug */,
+				BA0E409B8EC321DFCFE9D2236FCBC636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		351F332D3582892082D416A34D4EB595 /* Build configuration list for PBXNativeTarget "Pods-iTalk-iTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B9AFCB9483A1EA1D4CA40DCFFD2382 /* Debug */,
+				D0797EA9BC02A903BBADB1BF923FCEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231528393B7084E13F97FF9EF804A1C0 /* Debug */,
+				353D2EB3545D27343B51B709D9C0420B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFC55BC06555EB72B291B5D83A39AA3 /* Build configuration list for PBXNativeTarget "Pods-iTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6D3ABD4757361CC5FE07B6684B7568 /* Debug */,
+				E3DC846D92E94193CEC40B118F2F3A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
