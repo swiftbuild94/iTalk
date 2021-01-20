@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 struct HistoryView: View {
 	@ObservedObject private var viewModel = ContactsVM()
 	private var contacts: [Contacts.User]? {

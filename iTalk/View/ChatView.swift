@@ -9,6 +9,12 @@
 import SwiftUI
 
 struct ChatView: View {
+	@ObservedObject private var viewModel = ContactsVM()
+	
+	var contacts: [Contacts.User]? {
+		return viewModel.getModel()
+	}
+	
 	@State private var zoomed = false
 	var contact: Contacts.User
 	
@@ -24,13 +30,14 @@ struct ChatView: View {
 				Image("audiowave")
 					.aspectRatio(contentMode: .fit)
 				Text("TODO Chats")
+//				TextField("Message", text: <#T##Binding<String>#>, onEditingChanged: <#T##(Bool) -> Void#>, onCommit: <#T##() -> Void#>)
+				
 			}
 			.navigationBarTitle(Text(contact.name), displayMode: .inline)
 		}
 	}
 	let cornerRadius: CGFloat = 50
 }
-
 /*
 struct ChatView_Previews: PreviewProvider {
 	let contacts = ContactsVM().contacts
@@ -40,4 +47,3 @@ struct ChatView_Previews: PreviewProvider {
     }
 }
 */
-

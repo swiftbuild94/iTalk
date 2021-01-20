@@ -39,8 +39,7 @@ struct ContactView: View {
 			ZStack{
 				Image(contact.thumb!)
 //					.background(Circle())
-					.clipShape(Circle())
-					.overlay(Circle().stroke(Color.black, lineWidth: lineWidth))
+					.clipShape(Circle()) 					.overlay(Circle().stroke(Color.black, lineWidth: lineWidth))
 					.shadow(radius: shadowRadius)
 					.padding(padding)
 				if chats != nil && chats! > -1 {
@@ -73,6 +72,7 @@ struct ContactView: View {
 			.position(x: 115, y: 145)
 			.foregroundColor(Color.red)
 			.shadow(radius: shadowRadius)
+			.animation(.easeIn)
 //			.overlay(Circle().stroke(Color.black, lineWidth: lineWidth))
 		}
 		private let shadowRadius: CGFloat = 5

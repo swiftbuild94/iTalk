@@ -12,6 +12,7 @@ struct LogIn: View {
     var body: some View {
 		NavigationView {
 			Form {
+				Image("AppIcon")
 				Text("Log In")
 					.font(.title)
 				Text("")
