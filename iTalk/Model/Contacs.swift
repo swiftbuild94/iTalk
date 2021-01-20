@@ -38,6 +38,7 @@ struct Contacts: Identifiable {
 	// MARK: - User
 	struct User: Identifiable {
 		var id = UUID()
+		var uid: String
 		var name: String
 		var photo: String?
 		var thumb: String?
