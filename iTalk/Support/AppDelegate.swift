@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  AppDelegate.swift/Users/patriciobenavente/Soft Develop/iTalk/iTalk.xcodeproj
 //  iTalk
 //
 //  Created by Patricio Benavente on 19/02/20.
@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		FirebaseApp.configure()
 		return true
 	}
 
