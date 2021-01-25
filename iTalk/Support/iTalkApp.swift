@@ -15,7 +15,7 @@ struct iTalkApp: App {
 	}
 	
 	var body: some Scene {
-		windowGroup ©{
+		windowGroup {
 			ContentView()
 		}
 	}

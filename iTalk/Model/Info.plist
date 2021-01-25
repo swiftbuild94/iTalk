@@ -22,6 +22,16 @@
 	<string>public.app-category.social-networking</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Requires Camara</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Requieres Contacts</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Requieres Location Always and in Usage</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Requieres Microphone</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Requieres Photo Library</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

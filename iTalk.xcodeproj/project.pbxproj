@@ -11,6 +11,7 @@
 		0E0BD6E125207C3400F77250 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BD6E025207C3200F77250 /* Array+Identifiable.swift */; };
 		0E12D215242C053C004F8EC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E12D214242C053C004F8EC9 /* SettingsView.swift */; };
 		0E4C9A4524C22C5200B756AE /* Contacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C9A4424C22C5200B756AE /* Contacs.swift */; };
+		0E4FD2A725BEF627000B65B3 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4FD2A625BEF626000B65B3 /* Test.swift */; };
 		0E5FC856250462DB0027E9BF /* ContactsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5FC855250462D80027E9BF /* ContactsVM.swift */; };
 		0E8F784A23FE27D800D56B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784923FE27D800D56B70 /* AppDelegate.swift */; };
 		0E8F784C23FE27D800D56B70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8F784B23FE27D800D56B70 /* SceneDelegate.swift */; };
@@ -28,7 +29,6 @@
 		0EE7F65625B7E428003010D7 /* iTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7F65525B7E426003010D7 /* iTalkApp.swift */; };
 		0EE7F65825B7E444003010D7 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7F65725B7E443003010D7 /* SessionStore.swift */; };
 		0EF09E4025A94AC300D6510B /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF09E3F25A94AC300D6510B /* Chats.swift */; };
-		0EFFF8AA242D3EFE00D0BE1D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFF8A9242D3EFA00D0BE1D /* Test.swift */; };
 		0EFFF8AC242D527600D0BE1D /* iTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFF8AB242D527600D0BE1D /* iTalkView.swift */; };
 		1647E687E9485ED1C1CA749E /* Pods_iTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED1D1165201EF40591E0DF3 /* Pods_iTalk.framework */; };
 		8F0CC4364BCDC86FA3AB4FB2 /* Pods_iTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB2AE09E66354B2A225E781 /* Pods_iTalkTests.framework */; };
@@ -59,6 +59,7 @@
 		0E30646B6B67A60557A67D32 /* Pods-iTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalk.debug.xcconfig"; path = "Target Support Files/Pods-iTalk/Pods-iTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		0E3218C524087B83006FE9F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0E4C9A4424C22C5200B756AE /* Contacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacs.swift; sourceTree = "<group>"; };
+		0E4FD2A625BEF626000B65B3 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		0E5FC855250462D80027E9BF /* ContactsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVM.swift; sourceTree = "<group>"; };
 		0E6F6E852404C76500FD5D73 /* iTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTalk.entitlements; sourceTree = "<group>"; };
 		0E8F784623FE27D800D56B70 /* iTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +84,6 @@
 		0EE7F65525B7E426003010D7 /* iTalkApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTalkApp.swift; sourceTree = "<group>"; };
 		0EE7F65725B7E443003010D7 /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		0EF09E3F25A94AC300D6510B /* Chats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
-		0EFFF8A9242D3EFA00D0BE1D /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test.swift; path = iTalk/View/Test.swift; sourceTree = SOURCE_ROOT; };
 		0EFFF8AB242D527600D0BE1D /* iTalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTalkView.swift; sourceTree = "<group>"; };
 		1AB2AE09E66354B2A225E781 /* Pods_iTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B38C539FCE8B2D1AC130E2 /* Pods-iTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTalkTests.debug.xcconfig"; path = "Target Support Files/Pods-iTalkTests/Pods-iTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,9 +141,9 @@
 		0E3218C224087A74006FE9F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0E4FD2A625BEF626000B65B3 /* Test.swift */,
 				0EF09E3F25A94AC300D6510B /* Chats.swift */,
 				0E4C9A4424C22C5200B756AE /* Contacs.swift */,
-				0EFFF8A9242D3EFA00D0BE1D /* Test.swift */,
 				0E8F785A23FE280400D56B70 /* Info.plist */,
 				0E8F784D23FE27D800D56B70 /* iTalk.xcdatamodeld */,
 			);
@@ -161,9 +161,9 @@
 		0E3218C424087A81006FE9F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E4FD2A225BEEE40000B65B3 /* Base.lproj */,
 				0E0BD6DE25206C4500F77250 /* GridLayout.swift */,
 				0EA551B3241604CE005390EE /* ChatView.swift */,
-				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
 				0E8F785023FE27D900D56B70 /* ContentView.swift */,
 				0EFFF8AB242D527600D0BE1D /* iTalkView.swift */,
 				0E982178240CBBB9006E19B3 /* HistoryView.swift */,
@@ -172,6 +172,14 @@
 				0E12D214242C053C004F8EC9 /* SettingsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0E4FD2A225BEEE40000B65B3 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				0E8F785723FE280400D56B70 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		0E8F783D23FE27D800D56B70 = {
@@ -467,11 +475,11 @@
 				0E8F784C23FE27D800D56B70 /* SceneDelegate.swift in Sources */,
 				0E982179240CBBBC006E19B3 /* HistoryView.swift in Sources */,
 				0E8F785123FE27D900D56B70 /* ContentView.swift in Sources */,
-				0EFFF8AA242D3EFE00D0BE1D /* Test.swift in Sources */,
 				0E5FC856250462DB0027E9BF /* ContactsVM.swift in Sources */,
 				0EF09E4025A94AC300D6510B /* Chats.swift in Sources */,
 				0EA551B4241604D3005390EE /* ChatView.swift in Sources */,
 				0ED68B9D252053DB0005ABA4 /* Grid.swift in Sources */,
+				0E4FD2A725BEF627000B65B3 /* Test.swift in Sources */,
 				0E8F784F23FE27D800D56B70 /* iTalk.xcdatamodeld in Sources */,
 				0EE7F65825B7E444003010D7 /* SessionStore.swift in Sources */,
 				0E0BD6DF25206C4600F77250 /* GridLayout.swift in Sources */,
@@ -656,6 +664,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iTalk/Model/Info.plist;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -667,7 +676,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -687,6 +696,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iTalk/Model/Info.plist;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,7 +708,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
